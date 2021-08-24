@@ -1,0 +1,1030 @@
+{
+	"info": {
+		"_postman_id": "d152e3ca-588c-47aa-bbc6-206b083baf61",
+		"name": "Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Owner Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"aamani\",\r\n    \"email\":\"aamani@owner.com\",\r\n    \"password\":\"aamani\",\r\n    \"role\":\"owner\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Owner Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"aamani\",\r\n    \"email\":\"aamani@owner.com\",\r\n    \"password\":\"aamani\",\r\n    \"role\":\"owner\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ac-jBEuP1ZG62ZofdYTZXdSFxB+ozY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:20:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjQ1M30.FLeaFuE-h2aU4FGX-JsM8rcAtQBuIUnmVLpAiklIQY8\",\n    \"message\": \"User Registered Sucessfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Owner Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aamani@owner.com\",\r\n    \"password\":\"aamani\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Owner Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"aamani@owner.com\",\r\n    \"password\":\"aamani\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-NgqimIBFhDZMPF7CFEI2Dx3KV9Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:22:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjU1MX0.HFprRBsQ2oo8jixpGVQAw0xHAGlQIRU0sXS68_NhsCM\",\n    \"message\": \"User LoggedIn Sucessfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Customer Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"aamani\",\r\n    \"email\":\"aamani@customer.com\",\r\n    \"password\":\"aamani\",\r\n    \"role\":\"customer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customer Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"aamani\",\r\n    \"email\":\"aamani@customer.com\",\r\n    \"password\":\"aamani\",\r\n    \"role\":\"customer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "172"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ac-aBkDk5v8nJolykv4YVNpqoR/mM4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:20:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjQ1OH0.IOESapLa6Mfsl7XU7ABjzwFSwKtyLBXsPnDhTkLz-yw\",\n    \"message\": \"User Registered Sucessfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Customer Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"aamani@customer.com\",\r\n    \"password\":\"aamani\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Customer Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"aamani@customer.com\",\r\n    \"password\":\"aamani\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "170"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"aa-mPWxUQcMU8YGXuL3mtckCLIxOnk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:21:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M\",\n    \"message\": \"User LoggedIn Sucessfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Product - Owner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjQ1M30.FLeaFuE-h2aU4FGX-JsM8rcAtQBuIUnmVLpAiklIQY8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\":\"Realme C15 Smartphone\",\r\n    \"price\":7000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Product - Owner",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjQ1M30.FLeaFuE-h2aU4FGX-JsM8rcAtQBuIUnmVLpAiklIQY8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\":\"Realme C15 Smartphone\",\r\n    \"price\":7000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-oCbYY9hrdMkG8X9oYbDn0nY6AE4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:26:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New Product Added\"\n}"
+				},
+				{
+					"name": "Add Product - Owner",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjQ1M30.FLeaFuE-h2aU4FGX-JsM8rcAtQBuIUnmVLpAiklIQY8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\":\"iPhone 12\",\r\n    \"price\":70000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-oCbYY9hrdMkG8X9oYbDn0nY6AE4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:30:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"New Product Added\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Products - Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Get All Products - Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-Dv7fcASYUTj0nU3/VyRcOEMzFUY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:30:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"productName\": \"Realme C15 Smartphone\",\n        \"price\": 7000,\n        \"owner\": {\n            \"id\": 1,\n            \"name\": \"aamani\",\n            \"email\": \"aamani@owner.com\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"productName\": \"iPhone 12\",\n        \"price\": 70000,\n        \"owner\": {\n            \"id\": 1,\n            \"name\": \"aamani\",\n            \"email\": \"aamani@owner.com\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get A Product - Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "Get All Products - Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e6-Dv7fcASYUTj0nU3/VyRcOEMzFUY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:30:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"productName\": \"Realme C15 Smartphone\",\n        \"price\": 7000,\n        \"owner\": {\n            \"id\": 1,\n            \"name\": \"aamani\",\n            \"email\": \"aamani@owner.com\"\n        }\n    },\n    {\n        \"id\": 2,\n        \"productName\": \"iPhone 12\",\n        \"price\": 70000,\n        \"owner\": {\n            \"id\": 1,\n            \"name\": \"aamani\",\n            \"email\": \"aamani@owner.com\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Add Order - Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"products\":[{\"productId\":1},{\"productId\":2}]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add Order - Customer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\":[{\"productId\":1},{\"productId\":2}]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-JOGBNEsx4q9h/ucnMraSNkv3kgg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:34:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order placed Successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View Orders - Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/order/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"order",
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Orders - Customer",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/order/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"order",
+								"customer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "520"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"208-QwOdBWesBSlm8zcZQChCjVQKVCo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:35:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"status\": \"order-placed\",\n        \"products\": [\n            {\n                \"id\": 1,\n                \"productName\": \"Realme C15 Smartphone\",\n                \"price\": 7000,\n                \"owner\": {\n                    \"id\": 1,\n                    \"name\": \"aamani\",\n                    \"email\": \"aamani@owner.com\"\n                },\n                \"orderproducts\": {\n                    \"createdAt\": \"2021-08-23T19:34:24.000Z\",\n                    \"updatedAt\": \"2021-08-23T19:34:24.000Z\",\n                    \"productId\": 1,\n                    \"orderId\": 1\n                }\n            },\n            {\n                \"id\": 2,\n                \"productName\": \"iPhone 12\",\n                \"price\": 70000,\n                \"owner\": {\n                    \"id\": 1,\n                    \"name\": \"aamani\",\n                    \"email\": \"aamani@owner.com\"\n                },\n                \"orderproducts\": {\n                    \"createdAt\": \"2021-08-23T19:34:24.000Z\",\n                    \"updatedAt\": \"2021-08-23T19:34:24.000Z\",\n                    \"productId\": 2,\n                    \"orderId\": 1\n                }\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "View Orders - Owner",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsImlhdCI6MTYyOTc0NjUwOH0.ju5ziJ5py9TloiiN-rYFj_6ZF9d4qRUQ7TQjZAArd8M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/order/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"order",
+						"customer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Orders - Owner",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYyOTc0NjQ1M30.FLeaFuE-h2aU4FGX-JsM8rcAtQBuIUnmVLpAiklIQY8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/order/owner",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"order",
+								"owner"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "310"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"136-fgXPsHfoUmC0JvKYnOa+Q1Lskh8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Aug 2021 19:37:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"status\": \"order-placed\",\n        \"customer\": {\n            \"id\": 2,\n            \"name\": \"aamani\",\n            \"email\": \"aamani@customer.com\"\n        },\n        \"products\": [\n            {\n                \"id\": 1,\n                \"productName\": \"Realme C15 Smartphone\",\n                \"price\": 7000,\n                \"orderproducts\": {\n                    \"productId\": 1,\n                    \"orderId\": 1\n                }\n            },\n            {\n                \"id\": 2,\n                \"productName\": \"iPhone 12\",\n                \"price\": 70000,\n                \"orderproducts\": {\n                    \"productId\": 2,\n                    \"orderId\": 1\n                }\n            }\n        ]\n    }\n]"
+				}
+			]
+		}
+	]
+}
